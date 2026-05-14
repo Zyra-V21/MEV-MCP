@@ -1,0 +1,24 @@
+[project]
+name = "mev-mcp-ingest"
+version = "0.1.0"
+description = "Ingestion pipeline for the MEV.fyi research corpus"
+requires-python = ">=3.11"
+dependencies = [
+    "httpx>=0.27",
+    "playwright>=1.47",
+    "pymupdf>=1.24",
+    "tiktoken>=0.7",
+    "fastembed>=0.4",
+    "apsw>=3.46",
+    "sqlite-vec>=0.1.6",
+    "tantivy>=0.22",
+    "tenacity>=9.0",
+    "tqdm>=4.66",
+    "python-slugify>=8.0",
+    "orjson>=3.10",
+    "playwright-stealth>=2.0.3",
+    "curl-cffi>=0.15.0",
+]
+
+[dependency-groups]
+dev = []

@@ -1,0 +1,39 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.python-version
+*.egg-info/
+
+# Rust
+mcp-server/target/
+**/Cargo.lock
+
+# Corpus artefacts (large + copyrighted content — not redistributable)
+corpus/pdfs/
+corpus/text/
+corpus/meta/
+corpus/chunks/
+corpus/tantivy/
+corpus/index.sqlite
+corpus/index.sqlite-shm
+corpus/index.sqlite-wal
+corpus/manifest.json
+
+# Auth — NEVER COMMIT (contains session cookies + manual HTML)
+corpus/auth/
+
+# Project-local config with absolute paths
+.mcp.json
+
+# Local model caches
+.fastembed_cache/
+.cache/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Plan files (Claude Code working notes)
+/home/*/.claude/plans/

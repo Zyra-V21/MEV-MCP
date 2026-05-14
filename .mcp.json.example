@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "mev-mcp": {
+      "command": "/ABSOLUTE/PATH/TO/MEV-MCP/mcp-server/target/release/mev-mcp",
+      "args": [
+        "--corpus",
+        "/ABSOLUTE/PATH/TO/MEV-MCP/corpus"
+      ]
+    }
+  }
+}
