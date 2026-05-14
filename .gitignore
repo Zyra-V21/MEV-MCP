@@ -37,3 +37,4 @@ corpus/auth/
 
 # Plan files (Claude Code working notes)
 /home/*/.claude/plans/
+.claude/

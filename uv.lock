@@ -562,6 +562,48 @@ wheels = [
 ]
 
 [[package]]
+name = "mev-mcp-ingest"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "apsw" },
+    { name = "curl-cffi" },
+    { name = "fastembed" },
+    { name = "httpx" },
+    { name = "orjson" },
+    { name = "playwright" },
+    { name = "playwright-stealth" },
+    { name = "pymupdf" },
+    { name = "python-slugify" },
+    { name = "sqlite-vec" },
+    { name = "tantivy" },
+    { name = "tenacity" },
+    { name = "tiktoken" },
+    { name = "tqdm" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "apsw", specifier = ">=3.46" },
+    { name = "curl-cffi", specifier = ">=0.15.0" },
+    { name = "fastembed", specifier = ">=0.4" },
+    { name = "httpx", specifier = ">=0.27" },
+    { name = "orjson", specifier = ">=3.10" },
+    { name = "playwright", specifier = ">=1.47" },
+    { name = "playwright-stealth", specifier = ">=2.0.3" },
+    { name = "pymupdf", specifier = ">=1.24" },
+    { name = "python-slugify", specifier = ">=8.0" },
+    { name = "sqlite-vec", specifier = ">=0.1.6" },
+    { name = "tantivy", specifier = ">=0.22" },
+    { name = "tenacity", specifier = ">=9.0" },
+    { name = "tiktoken", specifier = ">=0.7" },
+    { name = "tqdm", specifier = ">=4.66" },
+]
+
+[package.metadata.requires-dev]
+dev = []
+
+[[package]]
 name = "mmh3"
 version = "5.2.1"
 source = { registry = "https://pypi.org/simple" }
@@ -1420,48 +1462,6 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/97/c9/2553f72aaf65a2797d4229e37fa7fbe38ffbf3e32912d31bdd78b3323e59/tokenizers-0.23.1-cp310-abi3-win_amd64.whl", hash = "sha256:e7bfaf995c1bdbbd21d13539decb6650967013759318627d85daeb7881af16b7", size = 2798223, upload-time = "2026-04-27T14:43:28.51Z" },
     { url = "https://files.pythonhosted.org/packages/cd/2b/2be299bab55fc595e3d38567edb1a87f86e594842968fa9515a07bdcf422/tokenizers-0.23.1-cp310-abi3-win_arm64.whl", hash = "sha256:a26197957d8e4425dfba746315f3c425ea00cfa8367c5fbc4ec73447893dcea9", size = 2664127, upload-time = "2026-04-27T14:43:26.949Z" },
 ]
-
-[[package]]
-name = "torrente-mev-ingest"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "apsw" },
-    { name = "curl-cffi" },
-    { name = "fastembed" },
-    { name = "httpx" },
-    { name = "orjson" },
-    { name = "playwright" },
-    { name = "playwright-stealth" },
-    { name = "pymupdf" },
-    { name = "python-slugify" },
-    { name = "sqlite-vec" },
-    { name = "tantivy" },
-    { name = "tenacity" },
-    { name = "tiktoken" },
-    { name = "tqdm" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "apsw", specifier = ">=3.46" },
-    { name = "curl-cffi", specifier = ">=0.15.0" },
-    { name = "fastembed", specifier = ">=0.4" },
-    { name = "httpx", specifier = ">=0.27" },
-    { name = "orjson", specifier = ">=3.10" },
-    { name = "playwright", specifier = ">=1.47" },
-    { name = "playwright-stealth", specifier = ">=2.0.3" },
-    { name = "pymupdf", specifier = ">=1.24" },
-    { name = "python-slugify", specifier = ">=8.0" },
-    { name = "sqlite-vec", specifier = ">=0.1.6" },
-    { name = "tantivy", specifier = ">=0.22" },
-    { name = "tenacity", specifier = ">=9.0" },
-    { name = "tiktoken", specifier = ">=0.7" },
-    { name = "tqdm", specifier = ">=4.66" },
-]
-
-[package.metadata.requires-dev]
-dev = []
 
 [[package]]
 name = "tqdm"
